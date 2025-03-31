@@ -4,19 +4,27 @@ import { hoursClick } from "./hours-click.js";
 
 const $hours = document.getElementById("hours");
 
-export function hoursLoad({ date }) {
+export function hoursLoad({ date, dailySchedules }) {
   // Limpar list de horários
-  $hours.innerHTML = ""
+  $hours.innerHTML = "";
+
+  // Obtém a lista dos horários ocupados
+  const unavailableHours = dailySchedules.map((schedule) =>
+    dayjs(schedule.when).format("HH:mm")
+  );
+
   const opening = openingHours.map((hour) => {
     // Recupera somente a hora
     const [scheduleHour] = hour.split(":");
 
     // Adiciona a hora na date e verificar se é passado
-    const isHourPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs());
+    const isHourPast = dayjs(date).add(scheduleHour, "hour").isBefore(dayjs());
+
+    const available = !unavailableHours.includes(hour) && !isHourPast;
 
     return {
       hour,
-      available: isHourPast,
+      available,
     };
   });
 
@@ -28,14 +36,14 @@ export function hoursLoad({ date }) {
     li.textContent = hour;
 
     if (hour === "9:00") {
-      addHourHead("Manhã")
-    } else if (hour === "13:00"){
-      addHourHead("Tarde")
-    } else if (hour === "18:00"){
-      addHourHead("Noite")
+      addHourHead("Manhã");
+    } else if (hour === "13:00") {
+      addHourHead("Tarde");
+    } else if (hour === "18:00") {
+      addHourHead("Noite");
     }
 
-    $hours.append(li)
+    $hours.append(li);
   });
 
   hoursClick();
@@ -44,6 +52,6 @@ export function hoursLoad({ date }) {
 function addHourHead(title) {
   const header = document.createElement("li");
   header.classList.add("hour-period");
-  header.textContent = title
+  header.textContent = title;
   $hours.append(header);
 }
