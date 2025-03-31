@@ -1,0 +1,14 @@
+import { apiConfig } from "./api-config";
+
+export async function scheduleCalcel({ id }) {
+  try {
+    await fetch(`http://localhost:3333/schedules/${id}`, {
+      method: "DELETE",
+    });
+
+    alert("Agendamento cancelado com sucesso!");
+  } catch (error) {
+    console.log(error);
+    alert("Não foi possível cancelar o agendamento.");
+  }
+}

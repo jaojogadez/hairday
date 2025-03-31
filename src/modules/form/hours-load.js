@@ -47,6 +47,7 @@ export function hoursLoad({ date, dailySchedules }) {
   });
 
   hoursClick();
+
 }
 
 function addHourHead(title) {
