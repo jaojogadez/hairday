@@ -69,7 +69,7 @@ Antes de iniciar o projeto, você precisará ter instalado:
 
    ```bash
    # Exemplo usando Python 3
-   python3 -m http.server 8000
+   python3 -m http.server 3333
 
    # Acesse no navegador: http://localhost:8000
    ```
