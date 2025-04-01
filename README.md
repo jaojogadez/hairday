@@ -1,4 +1,4 @@
-# 💇‍♀️ Hair Day - Sistema de Agendamento para Salões de Beleza
+# ✂️ Hair Day - Sistema de Agendamento para Barbearia e Salões de Beleza
 
 ![Projeto  - Hair Day](https://github.com/user-attachments/assets/67c8ca82-202d-44cb-a62d-097f11c88e3a)
 
