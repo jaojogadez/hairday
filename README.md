@@ -1,5 +1,7 @@
 # 💇‍♀️ Hair Day - Sistema de Agendamento para Salões de Beleza
 
+![Projeto  - Hair Day](https://github.com/user-attachments/assets/67c8ca82-202d-44cb-a62d-097f11c88e3a)
+
 ## 📝 Descrição do Projeto
 
 O **Hair Day** é uma solução completa para agendamento de serviços em salões de beleza e barbearias. Com uma interface intuitiva e moderna, nossa aplicação permite que profissionais gerenciem seus horários de forma eficiente, oferecendo aos clientes uma experiência de agendamento simplificada.
@@ -65,13 +67,14 @@ Antes de iniciar o projeto, você precisará ter instalado:
 
 ## 📱 Como Usar
 
-1. **Abra o arquivo `index.html` no navegador ou use um servidor local:**
+1. **Para inicir a aplicação `index.html` é necessário um servidor local:**
 
    ```bash
-   # Exemplo usando Python 3
-   python3 -m http.server 3333
+   # Inicie o servidor 
+   npm run server
 
-   # Acesse no navegador: http://localhost:8000
+   # Para abrir no navegador
+   npm run dev
    ```
 
 2. **Utilizando a aplicação:**
@@ -104,7 +107,7 @@ A URL base da API está configurada em `src/services/api-config.js` como `http:/
 
 ## 🤝 Como Contribuir
 
-Adoraríamos sua contribuição para o Hair Day! Aqui está como você pode ajudar:
+Adoraria sua contribuição para o Hair Day! Aqui está como você pode me ajudar:
 
 1. Faça um fork do repositório
 2. Crie uma branch para sua funcionalidade (`git checkout -b minha-nova-funcionalidade`)
