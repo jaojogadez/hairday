@@ -1,128 +1,128 @@
-# Hair Day - Agendamento de Serviços de Cabeleireiro
+# 💇‍♀️ Hair Day - Sistema de Agendamento para Salões de Beleza
 
-## Project Description
+## 📝 Descrição do Projeto
 
-Hair Day é um projeto de agendamento de serviços de cabeleireiro que permite aos usuários selecionar uma data, horário e informar o nome do cliente para criar agendamentos. A aplicação exibe os agendamentos de acordo com o dia selecionado, divididos por período (manhã, tarde e noite).
+O **Hair Day** é uma solução completa para agendamento de serviços em salões de beleza e barbearias. Com uma interface intuitiva e moderna, nossa aplicação permite que profissionais gerenciem seus horários de forma eficiente, oferecendo aos clientes uma experiência de agendamento simplificada.
 
-[https://github.com/jaojogadez/hairday](https://github.com/jaojogadez/hairday)
+Desenvolvido pensando nas necessidades do mercado brasileiro de beleza, o Hair Day organiza os agendamentos por períodos do dia, facilitando a visualização e organização da agenda.
 
-## Features and Functionality
+**Repositório:** [github.com/jaojogadez/hairday](https://github.com/jaojogadez/hairday)
 
-*   **Agendamento:** Permite aos usuários agendar um serviço, selecionando data, hora e informando o nome do cliente.
-*   **Visualização de Agendamentos:** Exibe os agendamentos de acordo com o dia selecionado, divididos por períodos (manhã, tarde e noite).
-*   **Cancelamento de Agendamentos:** Permite aos usuários cancelar um agendamento existente.
-*   **Interface Responsiva:** A interface se adapta a diferentes tamanhos de tela.
-*   **Validação de Dados:** Garante que os dados inseridos no formulário sejam válidos.
-*   **Listagem Dinâmica de Horários:**  Carrega dinamicamente os horários disponíveis com base na data selecionada e nos agendamentos existentes. Horários passados são automaticamente desabilitados.
-*   **Persistência de dados:** Os agendamentos são armazenados utilizando uma API (simulada no backend).
+## ✨ Funcionalidades Principais
 
-## Technology Stack
+* **📅 Agendamento Simplificado:** Selecione data, horário e adicione o nome do cliente com poucos cliques
+* **👁️ Visualização Organizada:** Veja agendamentos separados por período (manhã, tarde e noite)
+* **❌ Cancelamento Facilitado:** Cancele agendamentos com apenas um clique
+* **📱 Design Responsivo:** Interface adaptável para todos os dispositivos - desktop, tablet e celular
+* **✅ Validação Inteligente:** Sistema previne erros de agendamento e dados inválidos
+* **⏰ Horários Dinâmicos:** Horários já ocupados ou no passado são automaticamente bloqueados
+* **🔄 Sincronização em Tempo Real:** Todos os dados são armazenados e sincronizados via API
 
-*   **Frontend:** HTML, CSS, JavaScript
-*   **Styling:** CSS Modules
-*   **Date Management:** Day.js
-*   **API Calls:** Fetch API
+## 🛠️ Tecnologias Utilizadas
 
-## Prerequisites
+* **Frontend:** HTML5, CSS3, JavaScript ES6+
+* **Estilização:** CSS Modules para estilos isolados e reutilizáveis 
+* **Gerenciamento de Datas:** Day.js (leve e eficiente)
+* **Comunicação com Backend:** Fetch API nativa
 
-Before running the application, ensure you have the following installed:
+## 📋 Pré-requisitos
 
-*   Node.js (v16 or higher)
-*   A package manager such as npm or yarn.  (npm is included with Node.js)
-*   A backend server running (The project assumes a server running on `http://localhost:3333` which handles the scheduling data).  This backend is not included in the repository and must be setup separately.
+Antes de iniciar o projeto, você precisará ter instalado:
 
-## Installation Instructions
+* Node.js (versão 16 ou superior)
+* Gerenciador de pacotes npm (incluído no Node.js) ou yarn
+* Servidor backend rodando (o projeto está configurado para se conectar a um servidor em `http://localhost:3333`)
 
-1.  **Clone the repository:**
+## 🚀 Instalação Passo a Passo
 
-    ```bash
-    git clone https://github.com/jaojogadez/hairday.git
-    cd hairday
-    ```
+1. **Clone o repositório:**
 
-2.  **Install dependencies:**
+   ```bash
+   git clone https://github.com/jaojogadez/hairday.git
+   cd hairday
+   ```
 
-    It is assumed that the `dist` folder contains the compiled/bundled code. Therefore, you may not need to install dependencies directly within this project if you only intend to serve the pre-built files. However, if you want to modify and rebuild the frontend, you'll need the dependencies:
+2. **Instale as dependências:**
 
-    ```bash
-    #Example using npm
-    npm install
+   A pasta `dist` já contém o código compilado pronto para uso. Se precisar apenas rodar a aplicação, pode pular para o passo de uso. Para desenvolvimento:
 
-    #Or example using yarn (if you prefer yarn)
-    yarn install
-    ```
+   ```bash
+   # Usando npm
+   npm install
 
-3.  **Build the project (if modifications are needed):**
+   # Ou usando yarn
+   yarn install
+   ```
 
-    The project uses webpack (though it is not explicitly configured within the provided code). If you've modified source files, you'll need to bundle the application.  You'll need to configure Webpack accordingly to build the `src` files into the `dist` folder.
+3. **Compile o projeto (caso faça modificações):**
 
-    ```bash
-    # Example assuming you have webpack set up with a build script in package.json
-    npm run build  # or yarn build
-    ```
+   Se você fez alterações no código fonte, será necessário compilar novamente o projeto:
 
-## Usage Guide
+   ```bash
+   # Assumindo que há um script de build configurado no package.json
+   npm run build  # ou yarn build
+   ```
 
-1.  **Open `index.html` in your browser:**  The main entry point is `index.html`, or serve it using a local web server.
+## 📱 Como Usar
 
-    ```bash
-    # Example using Python's SimpleHTTPServer (Python 2)
-    python -m SimpleHTTPServer 8000
+1. **Abra o arquivo `index.html` no navegador ou use um servidor local:**
 
-    # Example using Python's http.server (Python 3)
-    python3 -m http.server 8000
+   ```bash
+   # Exemplo usando Python 3
+   python3 -m http.server 8000
 
-    #Open your browser and navigate to http://localhost:8000
-    ```
+   # Acesse no navegador: http://localhost:8000
+   ```
 
-2.  **Using the Application:**
+2. **Utilizando a aplicação:**
 
-    *   Select a date using the date picker. The date is displayed in the header of the schedule. The date is formated using `dayjs` in `src/modules/schedules/load-date.js` and the format displayed is `DD/MM/YY`.
-    *   Choose an available time slot from the list of hours. Click on a time to select it. The selection is handled by the `hoursClick` function located in `src/modules/form/hours-click.js`.
-    *   Enter the client's name in the input field.
-    *   Click the "Agendar" button to schedule the appointment.  The form submission is handled by the function in `src/modules/form/submit.js`.
-    *   View the scheduled appointments on the right-hand side under the "Agendamentos" section. Appointments are grouped by time of day (Manhã, Tarde, Noite).
-    *   To cancel an appointment, click the cancel icon next to the appointment.  The cancel functionality is found in `src/modules/schedules/cancel.js`.
+   * Selecione uma data no calendário (formato DD/MM/YY)
+   * Escolha um horário disponível na lista
+   * Digite o nome do cliente no campo indicado
+   * Clique em "Agendar" para confirmar
+   * Visualize todos os agendamentos do dia na seção à direita
+   * Para cancelar um agendamento, clique no ícone de cancelamento ao lado
 
-## API Documentation
+## 🔌 Documentação da API
 
-The application interacts with a backend API to manage appointments. The API endpoints used are:
+A aplicação se comunica com uma API backend para gerenciar os agendamentos:
 
-*   **GET `/schedules`**: Fetches all schedules. Used in `src/services/schedule-fetch-by-day.js` to retrieve appointments for a specific date.
-*   **POST `/schedules`**: Creates a new schedule. Used in `src/services/schedule-new.js` to add new appointments. The request body should be a JSON object with the following properties:
+* **GET `/schedules`**: Busca todos os agendamentos
+* **POST `/schedules`**: Cria um novo agendamento com a estrutura:
 
-    ```json
-    {
-        "id": "unique_id",
-        "name": "Client Name",
-        "when": "ISO 8601 Date String"
-    }
-    ```
+  ```json
+  {
+      "id": "id_unico",
+      "name": "Nome do Cliente",
+      "when": "Data em formato ISO 8601"
+  }
+  ```
 
-*   **DELETE `/schedules/:id`**: Cancels a schedule with the given ID. Used in `src/services/schedule-cancel.js` to delete existing appointments.
+* **DELETE `/schedules/:id`**: Cancela um agendamento pelo ID
 
-The base URL for the API is defined in `src/services/api-config.js`:
+A URL base da API está configurada em `src/services/api-config.js` como `http://localhost:3333`.
 
-```javascript
-export const apiConfig = {
-    baseURL: "http://localhost:3333",
-}
-```
+## 🤝 Como Contribuir
 
-## Contributing Guidelines
+Adoraríamos sua contribuição para o Hair Day! Aqui está como você pode ajudar:
 
-Contributions are welcome! To contribute to Hair Day, please follow these guidelines:
+1. Faça um fork do repositório
+2. Crie uma branch para sua funcionalidade (`git checkout -b minha-nova-funcionalidade`)
+3. Faça commit das suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Envie para o GitHub (`git push origin minha-nova-funcionalidade`)
+5. Abra um Pull Request detalhando suas alterações
 
-1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes and commit them with descriptive messages.
-4.  Test your changes thoroughly.
-5.  Submit a pull request with a clear explanation of your changes.
+## 📄 Licença
 
-## License Information
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📞 Suporte e Contato
 
-## Contact/Support Information
+Está com dúvidas ou sugestões? Entre em contato com o desenvolvedor:
 
-For questions or support, please contact [jaojogadez](https://github.com/jaojogadez).
+* GitHub: [jaojogadez](https://github.com/jaojogadez)
+* Entre em contato através das Issues do repositório
+
+---
+
+💈 **Hair Day** - Transformando a gestão de agendamentos para profissionais de beleza no Brasil.
