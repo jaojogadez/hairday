@@ -105,6 +105,33 @@ A aplicação se comunica com uma API backend para gerenciar os agendamentos:
 
 A URL base da API está configurada em `src/services/api-config.js` como `http://localhost:3333`.
 
+## Estrutura de Pastas
+
+```
+├── dist
+│   ├── src/assets
+│   │   ├── index.html
+│   │   ├── main.js
+│   │   └── scissors.svg
+├── src
+│   ├── assets/
+│   ├── libs/
+│   ├── modules/
+│   ├── services/
+│   ├── styles/
+│   ├── utils/
+│   └── main.js
+├── .gitattributes
+├── .gitignore
+├── LICENSE
+├── README.md
+├── index.html
+├── package-lock.json
+├── package.json
+├── server.json
+└── webpack.config.js
+```
+
 ## 🤝 Como Contribuir
 
 Adoraria sua contribuição para o Hair Day! Aqui está como você pode me ajudar:
