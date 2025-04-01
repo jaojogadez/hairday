@@ -5,6 +5,13 @@
 
 .schedule > header {
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-container {
+  display: flex;
+  align-items: end;
 }
 
 .schedule > header h1 {

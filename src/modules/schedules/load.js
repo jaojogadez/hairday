@@ -1,6 +1,7 @@
 import { hoursLoad } from "../form/hours-load.js";
 import { schedulesShow } from "../schedules/show.js";
 import { scheduleFetchByDay } from "../../services/schedule-fetch-by-day.js";
+import { updateDate } from "../schedules/load-date.js";
 
 // Input de data
 const $selectedDate = document.querySelector("#date");

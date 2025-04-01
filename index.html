@@ -13,7 +13,7 @@
     <div class="container">
       <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
       <!-- Form Container Start -->
-      <form class="form">
+      <form class="form" autocomplete="off">
         <header>
           <h1>Agende um atendimento</h1>
           <p>
@@ -25,7 +25,7 @@
         <label for="date" class="label">Data</label>
         <div class="input">
           <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
-          <input type="date" id="date" name="date" required />
+          <input type="date" id="date" name="date" required autocomplete="off"/>
         </div>
 
         <span class="label">Horários</span>
@@ -72,8 +72,13 @@
       <!-- Schedule Container Start -->
       <aside class="schedule">
         <header>
-          <h1>Agendamentos</h1>
-          <p>Visualize os agendamentos de acordo com o dia selecionado</p>
+          <div>
+            <h1>Agendamentos</h1>
+            <p>Visualize os agendamentos de acordo com o dia selecionado</p>
+          </div>
+          <div class="date-container">
+            <h2>dd/mm/yy</h2>
+          </div>
         </header>
 
         <section class="schedule-period">
