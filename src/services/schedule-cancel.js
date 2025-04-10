@@ -2,7 +2,7 @@ import { apiConfig } from "./api-config";
 
 export async function scheduleCalcel({ id }) {
   try {
-    await fetch(`http://localhost:3333/schedules/${id}`, {
+    await fetch(`${apiConfig.baseURL}/schedules/${id}`, {
       method: "DELETE",
     });
 
