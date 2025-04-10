@@ -9,13 +9,14 @@ O **Hair Day** é uma solução completa para agendamento de serviços em salõe
 Desenvolvido pensando nas necessidades do mercado brasileiro de beleza, o Hair Day organiza os agendamentos por períodos do dia, facilitando a visualização e organização da agenda.
 
 **Repositório:** [github.com/jaojogadez/hairday](https://github.com/jaojogadez/hairday) <br>
-**Acesso:** https://jaojogadez.github.io/hairday/
+<!-- **Acesso:** https://jaojogadez.github.io/hairday/ -->
 
 ## ✨ Funcionalidades Principais
 
 * **📅 Agendamento Simplificado:** Selecione data, horário e adicione o nome do cliente com poucos cliques
 * **👁️ Visualização Organizada:** Veja agendamentos separados por período (manhã, tarde e noite)
 * **❌ Cancelamento Facilitado:** Cancele agendamentos com apenas um clique
+* **✏️ Editar Facilitado: ** Edite um agendamento com um clique
 * **📱 Design Responsivo:** Interface adaptável para todos os dispositivos - desktop, tablet e celular
 * **✅ Validação Inteligente:** Sistema previne erros de agendamento e dados inválidos
 * **⏰ Horários Dinâmicos:** Horários já ocupados ou no passado são automaticamente bloqueados
