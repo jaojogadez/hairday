@@ -16,7 +16,7 @@ Desenvolvido pensando nas necessidades do mercado brasileiro de beleza, o Hair D
 * **📅 Agendamento Simplificado:** Selecione data, horário e adicione o nome do cliente com poucos cliques
 * **👁️ Visualização Organizada:** Veja agendamentos separados por período (manhã, tarde e noite)
 * **❌ Cancelamento Facilitado:** Cancele agendamentos com apenas um clique
-* **✏️ Editar Facilitado: ** Edite um agendamento com um clique
+* **✏️ Editar Facilitado:** Edite um agendamento com um clique
 * **📱 Design Responsivo:** Interface adaptável para todos os dispositivos - desktop, tablet e celular
 * **✅ Validação Inteligente:** Sistema previne erros de agendamento e dados inválidos
 * **⏰ Horários Dinâmicos:** Horários já ocupados ou no passado são automaticamente bloqueados
