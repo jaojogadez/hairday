@@ -28,8 +28,14 @@ export function schedulesShow({ dailySchedules }) {
       cancelIcon.setAttribute("src", "./src/assets/cancel.svg");
       cancelIcon.setAttribute("alt", "Cancelar");
 
+      // Cria ícone de editar
+      const editIcon = document.createElement("img");
+      editIcon.classList.add("edit-icon");
+      editIcon.setAttribute("src", "./src/assets/escrever.png");
+      editIcon.setAttribute("alt", "Editar");
+
       // Adiciona o tempo, o nome e o ícone no item
-      item.append(time, name, cancelIcon);
+      item.append(time, name, editIcon, cancelIcon);
 
       // Obtém somente a hot
       const hour = dayjs(schedule.when).hour();
