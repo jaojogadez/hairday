@@ -81,6 +81,9 @@ periods.forEach((period) => {
               hour.classList.add("hour-selected");
             }
           });
+
+          await scheduleCalcel({ id });
+
         }
       }
     }
